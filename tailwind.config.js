@@ -7,6 +7,14 @@ module.exports = {
   plugins: [require("daisyui")],
   // daisyUI config (optional)
   daisyui: {
-    themes: ["cupcake", "dark", "cmyk"],
+    themes: [{
+      mytheme: {
+        primary: "#5A4AE3",
+        secondary: "#4AE35A",
+        accent: "#E34A87",
+        neutral: "#3521D9",
+        "base-100": "#E34A87",
+      },
+    }, "cmyk", "dark", "cupcake"],
   },
 };
