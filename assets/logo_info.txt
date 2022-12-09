@@ -1,7 +1,7 @@
 
-            Fonts used: Harman-Sans 
+            Fonts used: BebasNeue 
 
-            Colors used: 8CD9D2,F55CA6  
+            Colors used: EFEFEF,5A4AE3  
 
-            Icon url: https://thenounproject.com/term/food/677333  
+            Icon url: https://thenounproject.com/term/fruit/588656  
         
