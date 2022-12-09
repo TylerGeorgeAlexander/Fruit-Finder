@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Detector</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="./assets/Food Detector-logos_black.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <% if(locals.count > 0) { %>
+    <img src="<%= img%>" alt="Food" />
+    <h1>Food</h1>
+    <% }else { %>
+    <img src="<%= img%>" alt="Not Food" />
+    <h1>Not Food</h1>
+    <% } %> <% for(let obj of objects){ %> <% if(obj.object !== "Food"){ %>
+    <h2><%= obj.object %></h2>
+    <% } %> <% } %>
+
+    <form action="/" enctype="multipart/form-data" method="post">
+      <input type="file" name="file-to-upload" />
+      <input type="submit" value="Upload" />
+    </form>
+  </body>
+</html>
