@@ -11,26 +11,33 @@
       type="image/x-icon"
     />
   </head>
-  <body class="text-center justify-center">
+  <body class="bg-primary text-center justify-center">
     <header class="flex justify-center">
       <img
         src="https://github.com/TylerGeorgeAlexander/food-detector/blob/main/assets/Food%20Detector-logos_transparent.png?raw=true"
         alt="Food Detector Logo"
       />
     </header>
-    <% if(locals.count > 0) { %>
-    <img src="<%= img%>" alt="Food" />
-    <h1>Food</h1>
-    <% }else { %>
-    <img src="<%= img%>" alt="Not Food" />
-    <h1>Not Food</h1>
-    <% } %> <% for(let obj of objects){ %> <% if(obj.object !== "Food"){ %>
+    <!-- FORM -->
+    <form action="/" enctype="multipart/form-data" method="post">
+      <input
+        type="file"
+        name="file-to-upload"
+        class="file-input file-input-bordered file-input-secondary w-full max-w-xs"
+      />
+      <input type="submit" value="Upload" class="btn btn-secondary"/>
+    </form>
+    <!-- Items Loop -->
+    <% for(let obj of objects){ %> <% if(obj.object !== "Food"){ %>
     <h2><%= obj.object %></h2>
     <% } %> <% } %>
-
-    <form action="/" enctype="multipart/form-data" method="post">
-      <input type="file" name="file-to-upload" />
-      <input type="submit" value="Upload" />
-    </form>
+    <!-- Image Logic  -->
+    <% if(locals.count > 0) { %>
+    <h2>You uploaded Food!</h2>
+    <img src="<%= img%>" alt="Food" class="flex-col mx-auto" />
+    <% }else { %>
+    <h2>This is Not Food...</h2>
+    <img src="<%= img%>" alt="Not Food" class="flex-col mx-auto" />
+    <% } %>
   </body>
 </html>
