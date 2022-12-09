@@ -18,17 +18,20 @@
         alt="Food Detector Logo"
       />
     </header>
-    <h1 class="text-3xl font-bold underline">Please upload an image below:</h1>
+    <h1 class="text-3xl font-bold underline m-4">
+      Please upload an image below:
+    </h1>
     <!-- FORM -->
-    <form action="/" enctype="multipart/form-data" method="post">
+    <form action="/" enctype="multipart/form-data" method="post" class="m-4">
       <input
         type="file"
         name="file-to-upload"
-        class="file-input file-input-bordered file-input-secondary w-full max-w-xs"
+        class="m-4 file-input file-input-bordered file-input-secondary w-full max-w-xs"
       />
-      <input type="submit" value="Upload" class="btn btn-secondary" />
+      <input type="submit" value="Upload" class="m-4 btn btn-secondary" />
     </form>
-    <p class="text-2xl font-bold">We will try and detect if it is food.</p>
-    <span class="text-xl">We will list possible ingredients.</span>
+    <p class="text-2xl font-bold m-4">We will try and detect if it is food.</p>
+    <span class="text-xl m-4">We will list possible ingredients.</span>
+    <footer class="m-4 p-4">&copy; Copyright 2022 Food Detector</footer>
   </body>
 </html>

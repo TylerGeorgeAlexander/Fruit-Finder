@@ -19,25 +19,28 @@
       />
     </header>
     <!-- FORM -->
-    <form action="/" enctype="multipart/form-data" method="post">
+    <form action="/" enctype="multipart/form-data" method="post" class="m-4">
       <input
         type="file"
         name="file-to-upload"
-        class="file-input file-input-bordered file-input-secondary w-full max-w-xs"
+        class="m-4 file-input file-input-bordered file-input-secondary w-full max-w-xs"
       />
-      <input type="submit" value="Upload" class="btn btn-secondary" />
+      <input type="submit" value="Upload" class="m-4 btn btn-secondary" />
     </form>
     <!-- Items Loop -->
+    <h2 class="m-4 text-3xl font-bold">Possible Ingredients:</h2>
     <% for(let obj of objects){ %> <% if(obj.object !== "Food"){ %>
-    <h2><%= obj.object %></h2>
+    <h3 class="m-4 text-xl font-bold"><%= obj.object %></h3>
     <% } %> <% } %>
+    <hr />
     <!-- Image Logic  -->
     <% if(locals.count > 0) { %>
-    <h2>You uploaded Food!</h2>
+    <h2 class="m-4 text-3xl font-bold">You uploaded Food!</h2>
     <img src="<%= img%>" alt="Food" class="flex-col mx-auto" />
     <% }else { %>
-    <h2>This is Not Food...</h2>
+    <h2 class="m-4 text-3xl font-bold">This is Not Food...</h2>
     <img src="<%= img%>" alt="Not Food" class="flex-col mx-auto" />
     <% } %>
+    <footer class="m-4">&copy; Copyright 2022 Food Detector</footer>
   </body>
 </html>
