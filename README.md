@@ -7,13 +7,17 @@ To run Fruit Finder locally, you will need to have Node.js and npm installed on 
 First, clone the repository to your local machine:
 
 ```git clone https://github.com/TylerGeorgeAlexander/fruit-finder.git```
+
 Next, navigate to the project directory and install the necessary dependencies:
 
 ```cd fruit-finder```
+
 ```npm install```
+
 Now, you can start the development server by running:
 
 ```npm start```
+
 The app will be running on http://localhost:2121/.
 
 ## Using Fruit Finder
