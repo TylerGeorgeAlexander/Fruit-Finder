@@ -1,24 +1,32 @@
-# Welcome to the Fruit Finder App!
+# Fruit Finder
+Welcome to Fruit Finder, a web application built with Node.js, Express, and EJS. This app utilizes Microsoft Azure's Cognitive Services to detect if an uploaded image contains fruit, and to identify the type of fruit present in the image.
 
-The Fruit Finder App is a web application that allows users to search for information about different types of fruit. The app is built with EJS (Embedded JavaScript), Node.js, and Express.js.
+## Getting Started
+To run Fruit Finder locally, you will need to have Node.js and npm installed on your machine.
 
-To use the Fruit Finder App, follow these steps:
+First, clone the repository to your local machine:
 
-Install the required dependencies by running npm install in the root directory of the project.
+Copy code
+```git clone https://github.com/TylerGeorgeAlexander/fruit-finder.git```
+Next, navigate to the project directory and install the necessary dependencies:
 
-Start the server by running npm start or node app.js. This will start the server on http://localhost:2121.
+```cd fruit-finder```
+```npm install```
+Now, you can start the development server by running:
 
-Open your web browser and go to http://localhost:2121. You should see the Fruit Finder App homepage.
+```npm start```
+The app will be running on http://localhost:2121/.
 
-Use the search bar to search for a specific fruit or browse through the list of fruits on the homepage.
+## Using Fruit Finder
+To use Fruit Finder, simply upload an image by clicking the "Choose File" button and selecting an image file from your computer. Once you have selected an image, click the "Upload" button to start the fruit detection process.
 
-Click on a fruit to view more information about it, including its nutrition facts and any available recipes.
+The app will use Microsoft Azure's Cognitive Services to analyze the image and determine if it contains fruit. If fruit is detected, the app will display the types of fruit present in the image. If no fruit is detected, the app will display a message indicating that no fruit was found.
 
-We hope you enjoy using the Fruit Finder App! If you have any feedback or suggestions for improvements, please don't hesitate to let us know.
+### Additional Features
+In addition to fruit detection, Fruit Finder also utilizes Microsoft Azure's Computer Vision API to identify any other objects present in the image. These objects will be displayed in a list below the fruit detection results.
 
-## Install
-
-`npm install`
+### Acknowledgements
+Fruit Finder would not be possible without the powerful machine learning and computer vision capabilities of Microsoft Azure's Cognitive Services. We are grateful for the opportunity to use these tools to build this app.
 
 ---
 
